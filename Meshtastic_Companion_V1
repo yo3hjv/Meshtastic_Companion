@@ -63,7 +63,7 @@ void Check_sSerial(){
             String receivedString = sSerial.readStringUntil('\n');
       
                     if (receivedString.indexOf(specificSubstring) != -1) {
-                          sSerial.print("Robotel te-a auzit!");
+                          sSerial.println("Robotel te-a auzit!");
                           Serial.print("Tocmai am receptionat ");
                           Serial.println(specificSubstring);
                         }                 
